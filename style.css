@@ -12,6 +12,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Poppins', sans-serif; /* Applying font family */
+    /* overflow-x: hidden; */
 }
 
 nav {
@@ -221,7 +222,11 @@ nav button:hover {
     justify-content: center;
     border-bottom: 1px solid rgb(209, 209, 209);
 }
-
+#page-2 h1{
+    color: #7600ff;
+    text-align: center;
+    width: 100%;
+}
 #page-2 h2 {
     color: white;
     background-color: #7600ff;
@@ -233,29 +238,29 @@ nav button:hover {
 
 #page-2-content {
     padding-top: 5vh;
-    max-width: 50%;
+    max-width: 40%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1.5vw;
+    gap: 1vw;
 }
 
 #floating-div img{
-    width:30vw;
+    width:25vw;
 }
 #float-1{
     position: absolute;
-    right: 5vw;
-    top: 40vh;
+    right: 2vw;
+    top: 20vh;
     animation: floatAnimation 3s ease-in-out infinite;
 }
 
 #float-2{
     position: absolute;
-    left: 5vw;
-    top: 40vh;
+    left: 2vw;
+    top: 20vh;
     animation: floatAnimation 3s ease-in-out infinite;
 }
 
@@ -360,6 +365,13 @@ nav button:hover {
     display: flex;
     gap: 8vw;
 }
+
+#page-4{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
 @keyframes move {
     0% {
         transform: translateX(0%);
@@ -411,12 +423,12 @@ nav button:hover {
     }
     #float-1{
         right: 4vw;
-        top: 45vh;
+        top: 75vh;
     }
     
     #float-2{
         left: 4vw;
-        top: 45vh;
+        top: 75vh;
     }
     #page-3-cards{
         padding: 0 2vw;
@@ -429,6 +441,9 @@ nav button:hover {
     .card{
         width: 300px;
         height: 380px;
+    }
+    #page-2-content {
+        width: 100%;
     }
 }
 @media (max-width: 768px) {
