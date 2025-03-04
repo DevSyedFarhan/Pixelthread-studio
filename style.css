@@ -15,6 +15,10 @@ body {
     /* overflow-x: hidden; */
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 nav {
     padding: 2vh 5vw;
     position: sticky;
@@ -271,6 +275,7 @@ nav button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid rgb(190, 190, 190);
 }
 
 #page-3-content{
@@ -368,8 +373,75 @@ nav button:hover {
 
 #page-4{
     width: 100vw;
-    height: 100vh;
+    height: auto;
     position: relative;
+    display: flex;
+    padding: 3vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+#page-4-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2vw;
+    width: 50%;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    padding-bottom: 1.5vw;
+}
+#page-4 h2 {
+    color: white;
+    background-color: #7600ff;
+    padding: 1vh 3vw;
+    width: 210px;
+    height: auto;
+    font-size: 1rem;
+    border-radius: 50px;
+    font-weight: 400;
+}
+#page-4 p{
+    font-size: 1rem;
+}
+#pr-cards {
+    width: 100%;
+    padding: 0 5vw;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3vw; 
+    justify-content: center; 
+    align-items: center;
+}
+.project-card {
+    background-color: white;
+    height: 220px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 2px solid rgb(192, 192, 192);
+    overflow: hidden;
+}
+.project-card:hover{
+    scale: 1.05;
+}
+/* Image Styling */
+.project-card img {
+    transition: all 0.6s ease;
+    height: 100%;/* Isse image pura card cover karegi */
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+.project-card:hover img{
+    scale: 1.6;
 }
 
 @keyframes move {
