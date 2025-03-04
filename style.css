@@ -117,16 +117,18 @@ nav button:hover {
     width: 50%;
     min-width: 300px;
     height: auto;
-    gap: 2vh;
+    gap: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 #hero-left h1 {
+    font-size: 2.2rem;
     color: #7600ff;
     min-width: 1.2rem;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 
 #hero-left p {
@@ -188,8 +190,8 @@ nav button:hover {
 }
 
 #flags img {
-    width: 50px;
-    max-width: 60px;
+    width: 70px;
+    max-width: 100px;
 }
 
 #white-1, #white-2 {
@@ -466,7 +468,7 @@ nav button:hover {
 }
 .count-container{
     display: flex;
-    width: 200px;
+    width: 180px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -483,7 +485,7 @@ nav button:hover {
 .count-container h4{
     font-weight: 400;
     line-height: 1;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 #page-5{
@@ -513,9 +515,8 @@ nav button:hover {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-
 }
-@media (max-width: 700px) {
+@media (max-width: 760px) {
     #hero-left {
         width: 100%;
         justify-content: center;
@@ -551,6 +552,9 @@ nav button:hover {
     }
     #page-3-cards{
         padding: 0 2vw;
+    }
+    #container{
+        gap: 5vw;
     }
 }
 @media (max-width: 320px) {
