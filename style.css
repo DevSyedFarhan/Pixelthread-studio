@@ -171,6 +171,7 @@ nav button:hover {
     height: auto;
     display: flex;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     margin: 1vw 0 2vw 0;
 }
@@ -273,6 +274,7 @@ nav button:hover {
     min-height: 100vh;
     position: relative;
     display: flex;
+    padding: 4vw;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid rgb(190, 190, 190);
@@ -280,8 +282,8 @@ nav button:hover {
 
 #page-3-content{
     padding-top: 5vh;
-    max-width: 50%;
-    min-width: 300px;
+    max-width: 70%;
+    min-width: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,11 +374,12 @@ nav button:hover {
 }
 
 #page-4{
+    padding-top: 4vw;
     width: 100vw;
     height: auto;
     position: relative;
     display: flex;
-    padding: 3vw;
+    /* padding-bottom: 4vw; */
     flex-direction: column;
     align-items: center;
     gap: 3vw;
@@ -420,7 +423,7 @@ nav button:hover {
 .project-card {
     background-color: white;
     height: 220px;
-    width: 300px;
+    width: 280px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -432,10 +435,10 @@ nav button:hover {
 .project-card:hover{
     scale: 1.05;
 }
-/* Image Styling */
+
 .project-card img {
     transition: all 0.6s ease;
-    height: 100%;/* Isse image pura card cover karegi */
+    height: 100%;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
@@ -444,6 +447,50 @@ nav button:hover {
     scale: 1.6;
 }
 
+#project-counter{
+    background-color: #7600ff;
+    width: 100%;
+    color: white;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#container{
+    display: flex;
+    gap: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.count-container{
+    display: flex;
+    width: 200px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.count-container img{
+    width: 70px;
+    margin-right: 15px;
+}
+.count-container h3{
+    font-weight: 400;
+    line-height: 1;
+    font-size: 2.5rem;
+}
+.count-container h4{
+    font-weight: 400;
+    line-height: 1;
+    font-size: 1.2rem;
+}
+
+#page-5{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
 @keyframes move {
     0% {
         transform: translateX(0%);
@@ -495,12 +542,12 @@ nav button:hover {
     }
     #float-1{
         right: 4vw;
-        top: 75vh;
+        top: 60vh;
     }
     
     #float-2{
         left: 4vw;
-        top: 75vh;
+        top: 60vh;
     }
     #page-3-cards{
         padding: 0 2vw;
