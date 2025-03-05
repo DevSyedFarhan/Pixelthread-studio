@@ -488,6 +488,94 @@ nav button:hover {
     font-size: 1.1rem;
 }
 
+#page-5{
+    padding-top: 4vw;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+}
+
+#page-5-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2vw;
+    width: 52%;
+    padding-bottom: 1.5vw;
+}
+
+#page-5 h2 {
+    color: white;
+    background-color: #7600ff;
+    padding: 1vh 3vw;
+    width: 220px;
+    height: auto;
+    font-size: 1rem;
+    border-radius: 50px;
+    font-weight: 400;
+}
+
+#page-5 p{
+    font-size: 1rem;
+}
+
+#page-5-cards{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+.about-card{
+    background-color: #7600ff;
+    width: 280px;
+    color: white;
+    height: 260px;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-card-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-card-top h4{
+    font-weight: 400;
+}
+.about-card-top i{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.about-card-btm h4{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.about-card-btm h3{
+    font-size: .7rem;
+    opacity: .8;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
 #page-8{
     width: 100vw;
     height: auto;
@@ -669,7 +757,13 @@ nav button:hover {
         gap: 5vw;
     }
     #page-8-content{
-        width: 100%;
+        width: 90%;
+    }
+    #page-5-content{
+        width: 90%;
+    }
+    #page-5-cards{
+        row-gap: 10vw;
     }
 }
 @media (max-width: 320px) {
