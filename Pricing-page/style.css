@@ -108,15 +108,41 @@ nav button:hover {
     width: 100vw;
     height: auto;
     position: relative;
+    
+}
+.page-1-content{
+    padding: 2vw;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1vw;
+    text-align: center;
+}
+.page-1-content h1{
+    color: #7600ff;
+    line-height: 1;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.page-1-content p{
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+#plans{
+    width: 100vw;
+    height: auto;
     display: flex;
     justify-content: center;
-    padding-top: 4vw;
-    gap: 2vw;
+    padding: 4vw 2vw;
+    gap: 3vw;
+    flex-wrap: wrap;
 }
 .pricing-card {
     background: #6c00ff;
     color: white;
-    width: 320px;
+    width: 300px;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -191,7 +217,7 @@ nav button:hover {
 .pricing-card-2{
     background: white;
     color: #7600ff;
-    width: 320px;
+    width: 300px;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

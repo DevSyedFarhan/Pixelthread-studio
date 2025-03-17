@@ -105,14 +105,14 @@ nav button:hover {
 }
 
 #about-page{
-    background-image: url(./Assets/background-02.png);
+    background-image: url(./Assets/background-01.png);
     background-position: center;
     background-size: cover;
     padding: 0 3vw;
     width: 100vw;
     min-height: 100vh;
     position: relative;
-    padding-top: 5vw;
+    padding-top: 2vw;
 }
 #about-content{
     display: flex;
