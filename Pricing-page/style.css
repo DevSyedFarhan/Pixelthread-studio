@@ -20,6 +20,64 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+#fullScrNav {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #7600ff;
+    top: -100%;
+    left: 0;
+    z-index: 1100;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+#fullScrNav.active {
+    top: 0; /* Show when active */
+    visibility: visible;
+    opacity: 1;
+}
+
+#fullScrNav i {
+    color: white;
+    font-size: 2rem;
+    background-color: white;
+    color: #7600ff;
+    border-radius: 50px;
+}
+
+#fullScrLinks {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    padding: 2vw;
+    position: relative;
+}
+
+#close-i {
+    width: 100%;
+    display: flex;
+    padding: 4vh 2vw;
+    justify-content: end;
+}
+
+#close-i i {
+    padding: 1vw;
+    cursor: pointer;
+}
+
+#fullScrLinks a {
+    padding: 1vw;
+    width: 100%;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    text-decoration: none;
+    color: white;
+}
+
+#fullScrLinks #bx {
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
 #upper-nav{
     background-color: #7600ff;
     height: 4vh;
