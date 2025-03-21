@@ -1037,6 +1037,7 @@ nav button:hover {
     font-size: 1.4rem;
 }
 
+
 #page-7{
     width: 100vw;
     height: auto;
@@ -1074,6 +1075,7 @@ nav button:hover {
     color: white;
     font-weight: 400;
 }
+
 #testimonials{
     display: flex;
     justify-content: center;
