@@ -394,6 +394,7 @@ nav button:hover {
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
     text-align: center;
 }
 #page-2 h2 {
