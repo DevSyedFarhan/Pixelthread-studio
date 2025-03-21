@@ -19,6 +19,22 @@ body {
 body::-webkit-scrollbar{
     display: none;
 }
+#loader{
+    top: 0;
+    position: fixed;
+    background-color: #7600ff;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 19999;
+    gap: 1vh;
+}
+#loader h3{
+    font-weight: 500;
+}
 #fullScrNav {
     position: absolute;
     height: 100vh;
@@ -1010,13 +1026,13 @@ nav button:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: .5vw;
     justify-content: space-between;
     align-items: center;
     height: 100%;
     /* background-color: red; */
 }
-#page-8-left .content{
+#page-8-left .content {
     background-color: #7600ff;
     color: white;
     text-align: center;
@@ -1027,16 +1043,44 @@ nav button:hover {
     justify-content: space-between;
     border-radius: 10px;
     padding: 3vw;
+    cursor: pointer;
+    /* margin-bottom: 5px; */
+    transition: all 0.3s ease;
+    z-index: 1;
+    border: 2px solid white;
 }
 
-#page-8-left .content>h2{
-    font-size: .9rem;
+.content h2 {
+    font-size: 0.9rem;
     font-weight: 400;
-}
-.content i{
-    font-size: 1.4rem;
+    margin: 0;
 }
 
+.content i {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content.active i {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+.answer-box {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 0px 3vw; /* Initially 0 padding */
+    width: 100%;
+    margin-top: -180px;
+    max-height: 0px; /* Initially hidden */
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease-in-out;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+}
 
 #page-7{
     width: 100vw;
@@ -1049,6 +1093,7 @@ nav button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
 }
 #page-7 h2 {
     color: #7600ff;
@@ -1402,6 +1447,9 @@ nav button:hover {
         flex-wrap: wrap;
         display: flex;
     }
+    /* #page-8-left{
+        gap: 2vw;
+    } */
 }
 @media (max-width: 768px) {
     #left-right-container{
